@@ -1,0 +1,46 @@
+@hostname=http://127.0.0.1:4100/piatti
+
+###
+# Elenco piatti
+GET {{hostname}}
+
+###
+# Singolo piatto
+GET {{hostname}}/1
+
+###
+# Creo piatto
+POST {{hostname}}
+Content-Type: application/json
+
+{
+    "primo": "prova",
+    "secondo": "csff",
+    "contorno": "dsffedf",
+    "dolce" : "dsfe",
+    "prezzo" : 12
+}
+
+###
+# Rimpiazza piatto
+PUT {{hostname}}/1
+Content-Type: application/json
+
+{
+    "primo": "Pinco",
+    "secondo": "Pallini",
+    "prezzo": 20
+}
+
+###
+# Modifica piatto
+PATCH {{hostname}}/1
+Content-Type: application/json
+
+{
+    "prezzo": 20
+}
+
+###
+# Elimina piatto
+DELETE {{hostname}}/1

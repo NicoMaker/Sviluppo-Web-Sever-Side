@@ -1,0 +1,26 @@
+@hostname=localhost
+@port=4100
+@url=HTTP://{{hostname}}:{{port}}
+
+###
+
+GET {{url}}
+
+###
+
+GET {{url}}/login
+
+###
+
+GET {{url}}/dashboard
+
+###
+
+GET {{url}}/timeline
+
+###
+
+# POST {{url}}/data/log.json
+
+# Content-Type: application/json
+# <./data/log.json>

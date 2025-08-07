@@ -1,0 +1,46 @@
+@hostname=http://127.0.0.1:4100/scorta
+
+###
+# Elenco scorta
+GET {{hostname}}
+
+###
+# Singolo scorta
+GET {{hostname}}/1
+
+###
+# Creo scorta
+POST {{hostname}}
+Content-Type: application/json
+
+{
+    "nome":"zacdvrfv",
+    "quantità":555,
+    "costo":55
+}
+
+###
+# Rimpiazza scorta
+PUT {{hostname}}/1
+Content-Type: application/json
+
+{
+    "nome":"zacdvrfv",
+    "quantità":555,
+    "costo":55
+}
+
+###
+# Modifica scorta
+PATCH {{hostname}}/1
+Content-Type: application/json
+
+{
+    "nome":"zacdvrfv",
+    "quantità":555,
+    "costo":55
+}
+
+###
+# Elimina scorta
+DELETE {{hostname}}/1

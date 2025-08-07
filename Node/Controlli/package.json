@@ -1,0 +1,20 @@
+{
+  "name": "controlli",
+  "version": "1.0.0",
+  "description": "prova",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Nicola Marano",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jq": "^1.7.2",
+    "q": "^1.5.1"
+  }
+}

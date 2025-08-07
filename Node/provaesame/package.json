@@ -1,0 +1,20 @@
+{
+  "name": "provaesame",
+  "version": "1.0.0",
+  "description": "questa è una prova d'esame ",
+  "main": " src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "Nicola Marano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

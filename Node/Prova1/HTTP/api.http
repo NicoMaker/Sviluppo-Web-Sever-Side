@@ -1,0 +1,7 @@
+@hostname=localhost
+@port=5000
+
+@url=http://{{hostname}}:{{port}}/api
+
+###
+GET {{url}}/routers

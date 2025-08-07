@@ -1,0 +1,53 @@
+@hostname = localhost
+@port = 5100
+@api_url = http://{{hostname}}:{{port}}/api
+
+###
+GET {{api_url}}/router
+
+###
+POST {{api_url}}/Create
+Content-Type: application/json
+
+{
+    "Voti":5,
+    "Presenze":100
+}
+
+###
+GET {{api_url}}/Read
+
+###
+GET {{api_url}}/Read/2
+
+###
+PUT {{api_url}}/Update/2
+Content-Type: application/json
+
+{
+    "Voti":6,
+    "Presenze":120
+}
+
+###
+PATCH  {{api_url}}/Update/3
+Content-Type: application/json
+
+{
+    "Voti":20
+}
+
+###
+DELETE {{api_url}}/Delete/2
+
+###
+DELETE {{api_url}}/DeleteAll
+
+###
+GET {{api_url}}/Condividi
+
+###
+GET {{api_url}}/OrdinamentoMaggiore
+
+###
+GET {{api_url}}/Media/prova2

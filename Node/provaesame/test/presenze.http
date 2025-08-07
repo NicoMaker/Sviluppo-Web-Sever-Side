@@ -1,0 +1,44 @@
+@host=http://localhost:3100/presenze
+
+###
+# Elenco presenze
+GET {{host}}
+
+###
+# Singola presenza
+GET {{host}}/1
+
+###
+# Crea presenza
+POST {{host}}
+Content-Type: application/json
+
+{
+    "nome": "Pinco",
+    "cognome": "Pallino",
+    "presenze": 56
+}
+
+###
+# Rimpiazza presenza
+PUT {{host}}/1
+Content-Type: application/json
+
+{
+    "nome": "Pinco",
+    "cognome": "Pallino",
+    "presenze": 72
+}
+
+###
+# Modifica presenza
+PATCH {{host}}/1
+Content-Type: application/json
+
+{
+    "presenze": 88
+}
+
+###
+# Elimina presenza
+DELETE {{host}}/1

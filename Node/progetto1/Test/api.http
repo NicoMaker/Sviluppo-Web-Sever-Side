@@ -1,0 +1,93 @@
+@hostname=localhost
+@port=5100
+@url=HTTP://{{hostname}}:{{port}}/api
+
+//Invio delle request specificando il percorso
+###
+
+GET HTTP://{{hostname}}:{{port}}
+
+###
+
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "username" : "tizio",
+    "password" : "caio"
+}
+
+###
+
+POST {{url}}/logout
+
+###
+
+POST {{url}}/data
+
+###
+
+POST {{url}}/data
+Content-Type: application/json
+
+< ../log3.json
+
+###
+
+GET {{url}}/data
+
+###
+
+GET {{url}}/database
+
+###
+
+GET {{url}}/data?timeFrom=1681997291&TimeTo=1681997350
+
+###
+
+GET {{url}}/log
+
+###
+GET {{url}}/log/4
+
+###
+
+POST {{url}}/log
+Content-Type: application/json
+
+{
+    "rpm": 21,
+    "volt": 22,
+    "current": 23,
+    "temp": 34.8,
+    "sender": "ws",
+    "time": 123123123
+}
+
+###
+
+PUT {{url}}/log/2
+Content-Type: application/json
+
+{
+    "rpm": 1000,
+    "volt": 120,
+    "current": 0.025,
+    "temp": 20.01,
+    "sender": "My-Rad",
+    "time": 321321321
+}
+
+###
+
+PATCH {{url}}/log/4
+Content-Type: application/json
+
+{
+    "rpm": 30
+}
+
+###
+
+DELETE {{url}}/log/1

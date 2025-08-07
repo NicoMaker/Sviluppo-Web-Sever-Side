@@ -1,0 +1,42 @@
+[
+{
+    "id" : 1,
+    "npm" : 5100,
+    "volt" : 240,
+    "current" : 49,
+    "temp" : 36.77,
+    "sender" : "RAS-01",
+    "time" : 1681997291,
+    "timeInsert" : 1681997400
+},
+{
+    "id" : 2,
+    "npm" : 5200,
+    "volt" : 230,
+    "current" : 51,
+    "temp" : 36.78,
+    "sender" : "RAS-01",
+    "time" : 1681997301,
+    "timeInsert" : 1681997410
+},
+{
+    "id" : 3,
+    "npm" : 5300,
+    "volt" : 220,
+    "current" : 500,
+    "temp" : 36.79,
+    "sender" : "RAS-01",
+    "time" : 1681997311,
+    "timeInsert" : 1681997420
+},
+{
+    "id" : 4,
+    "npm" : 5400,
+    "volt" : 210,
+    "current" : 0,
+    "temp" : 100,
+    "sender" : "RAS-01",
+    "time" : 1681997321,
+    "timeInsert" : 1681997243
+}
+]

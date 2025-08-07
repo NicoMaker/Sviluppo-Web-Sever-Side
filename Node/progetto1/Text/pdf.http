@@ -1,0 +1,13 @@
+@hostname=localhost
+@port=5100
+@url=http://{{hostname}}:{{port}}/pdf
+
+###
+<>
+GET {{url}}/downnload
+
+###
+GET {{url}}/inline
+
+###
+POST {{url}}/create

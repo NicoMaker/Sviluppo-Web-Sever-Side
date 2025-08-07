@@ -1,0 +1,53 @@
+@hostname=localhost
+@port=5100
+@url=http://{{hostname}}:{{port}}/api
+
+###
+
+GET {{url}}/log
+
+###
+
+GET {{url}}/log/2
+
+###
+
+POST {{url}}/log
+Content-Type: application/json
+
+{
+    "rpm": 500,
+    "volt": 22,
+    "current": 23,
+    "temp": 34.8,
+    "sender": "ws",
+    "time": 123123123
+}
+
+###
+
+PUT {{url}}/log/27
+Content-Type: application/json
+
+{
+    "rpm": 212,
+    "volt": 222,
+    "current": 232,
+    "temp": 342.8,
+    "sender": "ws2",
+    "time": 123123123222
+}
+
+
+###
+
+PATCH {{url}}/log/2
+Content-Type: application/json
+
+{
+    "rpm": 2400
+}
+
+###
+
+DELETE {{url}}/log/13
