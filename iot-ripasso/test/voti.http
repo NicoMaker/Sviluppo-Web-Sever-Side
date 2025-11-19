@@ -1,0 +1,44 @@
+@host=http://localhost:3100/voti
+
+###
+# Elenco voti
+GET {{host}}
+
+###
+# Singola voto
+GET {{host}}/1
+
+###
+# Crea voto
+POST {{host}}
+Content-Type: application/json
+
+{
+    "nome": "Pinco",
+    "cognome": "Pallino",
+    "voto": 10
+}
+
+###
+# Rimpiazza voto
+PUT {{host}}/1
+Content-Type: application/json
+
+{
+    "nome": "Pinco",
+    "cognome": "Pallini",
+    "voto": 20
+}
+
+###
+# Modifica voto
+PATCH {{host}}/1
+Content-Type: application/json
+
+{
+    "voto": 20
+}
+
+###
+# Elimina voto
+DELETE {{host}}/1
